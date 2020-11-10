@@ -9,14 +9,16 @@ const app = new Vue({
             'Fare i compiti',
             'Fare il bucato',
         ],
-        newTodo: null,
+        newTodo: '',
+        
     },
 
     methods:{
         addTodo(){
-            if( this.newTodo !== ''){
+            if( this.newTodo !== '' ){
                 this.list.push(this.newTodo);
             }
         }
     }
+    
 });
