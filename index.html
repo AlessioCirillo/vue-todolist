@@ -20,7 +20,7 @@
         <!-- MAIN -->
         <main>
             <div class="top-main">
-                <input type="text" v-model="newTodo" placeholder="Nuovo Todo">
+                <input type="text" v-model="newTodo" @keyup.enter='addTodo' placeholder="Nuovo Todo">
                 <button @click='addTodo'>Aggiungi</button>
             </div>
 

@@ -20,10 +20,6 @@ const app = new Vue({
                 this.list.push(this.newTodo)
                 this.newTodo = '';
             };
-
-            // if (this.list.push(this.newTodo) ){
-            //     this.newTodo = '';
-            // };
         }
     }
     
