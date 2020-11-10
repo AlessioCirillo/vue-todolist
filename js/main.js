@@ -9,7 +9,7 @@ const app = new Vue({
             'Fare i compiti',
             'Fare il bucato',
         ],
-        newTodo: [],
+        newTodo: null,
     },
 
     methods:{
