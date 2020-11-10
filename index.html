@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
 <body>
 
-    <div class="conatiner">
+    <div id="app">
         <!-- HEADER -->
         <header>
             <h1>Todo App</h1>
@@ -19,27 +20,15 @@
         <!-- MAIN -->
         <main>
             <div class="top-main">
-                <input type="text" placeholder="Nuovo Todo">
-                <button>Aggiungi</button>
+                <input type="text" v-model="newTodo" placeholder="Nuovo Todo">
+                <button @click='addTodo'>Aggiungi</button>
             </div>
 
             <!-- BOOTOM-MAIN -->
             <div class="bottom-main">
                 <ul>
-                    <li>
-                        Fare la spesa
-                        <a href="#">
-                            <i class="fas fa-times"></i>
-                        </a>
-                    </li>
-                    <li>
-                        Fare i compiti
-                        <a href="#">
-                            <i class="fas fa-times"></i>
-                        </a>
-                    </li>
-                    <li>
-                        Fare il bucato
+                    <li v-for='li in list'>
+                        {{ li }}
                         <a href="#">
                             <i class="fas fa-times"></i>
                         </a>
