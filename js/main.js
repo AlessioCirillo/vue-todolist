@@ -15,9 +15,15 @@ const app = new Vue({
 
     methods:{
         addTodo(){
+            
             if( this.newTodo !== '' ){
-                this.list.push(this.newTodo);
-            }
+                this.list.push(this.newTodo)
+                this.newTodo = '';
+            };
+
+            // if (this.list.push(this.newTodo) ){
+            //     this.newTodo = '';
+            // };
         }
     }
     
