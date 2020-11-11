@@ -12,18 +12,13 @@ const app = new Vue({
         ],
 
         newTodo: '',  
-    
-    },
 
-    created(){
-       console.log(index);
+        zeroTodo: '',
+    
     },
 
     methods:{
         addTodo(){
-
-            this.index = this.list.lenght -1;
-
             if( this.newTodo.trim() !== '' ){
                 this.list.push(this.newTodo)
                 this.newTodo = ''                   
@@ -32,7 +27,6 @@ const app = new Vue({
 
         removeTodo(index){
             this.list.splice(index, 1); 
-        }
+        },
     }
-    
 });
