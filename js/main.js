@@ -31,7 +31,7 @@ const app = new Vue({
         },
 
         removeTodo(index){
-            this.list.splice(index); 
+            this.list.splice(index, 1); 
         }
     }
     
