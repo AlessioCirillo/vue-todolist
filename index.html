@@ -34,10 +34,9 @@
                         </a>
                     </li>
                 </ul>
-                <span>{{zeroTodo}}</span>
-                <!-- <span v-if="list.length == 0">
-                    non ci sono todo
-                </span> -->
+                <span v-if="list.length === 0">
+                    Non ci sono Todo
+                </span>
             </div>
         </main>
     </div>
