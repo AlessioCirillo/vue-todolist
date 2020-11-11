@@ -46,7 +46,7 @@ button{
 
 /* BOTTOM-MAIN */
 .bottom-main{
-    width: 1170px;
+    max-width: 1170px;
     margin: auto;
     padding: 30px;
     background: #f1faee;
@@ -67,4 +67,40 @@ li{
 
 a{
     color: #000;
+}
+
+/* MEDIAQUERY */
+
+@media screen and (max-width: 1200px){
+    main .bottom-main{
+        max-width: 740px;
+    }
+}
+
+
+@media screen and (max-width: 760px){
+    main .bottom-main{
+        max-width: 450px; 
+    }
+    header {
+        height: 240px;
+        padding: 75px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    main .bottom-main{
+        max-width: 320px;
+    }
+    header {
+        height: 190px;
+        padding: 45px;
+    }
+    h1{
+        font-size: 40px;
+        padding-bottom: 10px;
+    }
+    h2{
+        font-size: 20px;
+    }
 }
