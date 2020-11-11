@@ -61,6 +61,10 @@ li{
     border-bottom: 1px solid lightgray;
 }
 
+.bottom-main ul li span::first-letter{
+    text-transform: uppercase;
+}
+
 a{
     color: #000;
 }

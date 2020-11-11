@@ -27,10 +27,10 @@
             <!-- BOOTOM-MAIN -->
             <div class="bottom-main">
                 <ul>
-                    <li v-for='li in list'>
-                        {{ li }}
+                    <li v-for='(li,index) in list'>
+                        <span>{{ li }} </span>
                         <a href="#">
-                            <i class="fas fa-times"></i>
+                            <i class="fas fa-times" @click='removeTodo(index)'></i>
                         </a>
                     </li>
                 </ul>

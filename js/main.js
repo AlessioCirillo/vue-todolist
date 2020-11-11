@@ -4,22 +4,34 @@ const app = new Vue({
     el: '#app',
 
     data: {
+
         list: [
             'Fare la spesa',
             'Fare i compiti',
             'Fare il bucato',
         ],
-        newTodo: '',
-        
+
+        newTodo: '',  
+    
+    },
+
+    created(){
+       console.log(index);
     },
 
     methods:{
         addTodo(){
-            
-            if( this.newTodo !== '' ){
+
+            this.index = this.list.lenght -1;
+
+            if( this.newTodo.trim() !== '' ){
                 this.list.push(this.newTodo)
-                this.newTodo = '';
+                this.newTodo = ''                   
             };
+        },
+
+        removeTodo(index){
+            this.list.splice(index); 
         }
     }
     
